@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:projectpractice="clr-namespace:projectpractice"
+             x:DataType="projectpractice:MainPage"
+             x:Class="projectpractice.ActivityPage"
+             Title="ActivityPage"
+             BackgroundColor = "#2F2F2F">
+        <ScrollView>
+        <Grid ColumnSpacing="-30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="VORNU"
+              TextColor="#008414"
+              BackgroundColor="#000000"
+              FontSize="28"
+              FontFamily="Monaco"
+              VerticalOptions="Center"
+              Padding="20"
+              Grid.Row="0"
+              CharacterSpacing="2"
+              Grid.ColumnSpan="3"
+              >
+        </Label>
+
+        <Label
+               FontSize="26"
+               x:Name="ActivityNameLabel"
+               HorizontalOptions="Center"
+               Grid.Row="1"
+               TextColor="#008414"
+               WidthRequest="200"
+               HeightRequest="50"
+               TextTransform="Uppercase"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Grid.ColumnSpan="3"
+               >
+        </Label>
+
+        <Label           
+               FontSize="36"
+               x:Name="SumLabel"
+               HorizontalOptions="Center"
+               Grid.Row="2"
+               TextColor="#008414"
+               WidthRequest="200"
+               HeightRequest="50"
+               TextTransform="Uppercase"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Grid.ColumnSpan="3"
+               >
+        </Label>
+
+        <Label FontSize="18"
+               x:Name="MemberOneLabel"
+               HorizontalOptions="Center"
+               Grid.Row="3"
+               TextColor="#008414"
+               WidthRequest="200"
+               HeightRequest="50"
+               Background="black"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Margin="10"
+               Grid.Column="0"
+               IsVisible="false">
+        </Label>
+
+        <Label
+                x:Name="Oneexpense"
+                TextColor="#008414"
+                WidthRequest="50"
+                HeightRequest="50"
+                Background="black"
+                Grid.Row="3"
+                Grid.Column="1"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                IsVisible="false">
+        </Label>
+
+        <Button Text="+"
+                x:Name="Btnone"
+                FontSize="36"
+                TextColor="#008414"
+                WidthRequest="50"
+                HeightRequest="50"
+                Background="black"
+                Grid.Row="3"
+                Grid.Column="2"
+                BorderColor="#008414"
+                BorderWidth="1"
+                Clicked="Button_Clicked_1"
+                IsVisible="false">
+        </Button>
+
+        <Label
+               FontSize="18"
+               x:Name="MemberTwoLabel"
+               HorizontalOptions="Center"
+               Grid.Row="4"
+               TextColor="#008414"
+               WidthRequest="200"
+               HeightRequest="50"
+               Background="black"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Margin="10"
+               Grid.Column="0"
+               IsVisible="false">
+        </Label>
+
+        <Label
+                x:Name="Twoexpense"
+                TextColor="#008414"
+                WidthRequest="50"
+                HeightRequest="50"
+                Background="black"
+                Grid.Row="4"
+                Grid.Column="1"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                IsVisible="false">
+        </Label>
+
+        <Button Text="+"
+                x:Name="Btntwo"
+                FontSize="36"
+                TextColor="#008414"
+                WidthRequest="50"
+                HeightRequest="50"
+                Background="black"
+                Grid.Row="4"
+                Grid.Column="2"
+                BorderColor="#008414"
+                BorderWidth="1"
+                Clicked="Button_Clicked_2"
+                IsVisible="false">
+        </Button>
+
+        <Label
+               FontSize="18"
+               x:Name="MemberThreeLabel"
+               HorizontalOptions="Center"
+               Grid.Row="5"
+               TextColor="#008414"
+               WidthRequest="200"
+               HeightRequest="50"
+               Background="black"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Margin="10"
+               Grid.Column="0"
+               IsVisible="false">
+        </Label>
+
+        <Label
+                x:Name="Threexpense"
+                TextColor="#008414"
+                WidthRequest="50"
+                HeightRequest="50"
+                Background="black"
+                Grid.Row="5"
+                Grid.Column="1"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                IsVisible="false">
+        </Label>
+
+        <Button Text="+"
+                x:Name="Btnthree"
+                FontSize="36"
+                TextColor="#008414"
+                WidthRequest="50"
+                HeightRequest="50"
+                Background="black"
+                Grid.Row="5"
+                Grid.Column="2"
+                BorderColor="#008414"
+                BorderWidth="1"
+                Clicked="Button_Clicked_3"
+                IsVisible="false">
+        </Button>
+
+        <Label
+               FontSize="18"
+               x:Name="MemberFourLabel"
+               HorizontalOptions="Center"
+               Grid.Row="6"
+               TextColor="#008414"
+               WidthRequest="200"
+               HeightRequest="50"
+               Background="black"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Margin="10"
+               Grid.Column="0"
+               IsVisible="false">
+        </Label>
+
+        <Label
+                x:Name="Fourexpense"
+                TextColor="#008414"
+                WidthRequest="50"
+                HeightRequest="50"
+                Background="black"
+                Grid.Row="6"
+                Grid.Column="1"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                IsVisible="false">
+        </Label>
+
+        <Button Text="+"
+                x:Name="Btnfour"
+                FontSize="36"
+                TextColor="#008414"
+                WidthRequest="50"
+                HeightRequest="50"
+                Background="black"
+                Grid.Row="6"
+                Grid.Column="2"
+                BorderColor="#008414"
+                BorderWidth="1"
+                Clicked="Button_Clicked_4"
+                IsVisible="false">
+        </Button>
+
+        <Entry
+               x:Name="Memberoneexpense"
+               Placeholder="Fyll i utgift"
+               Background="white"
+               WidthRequest="200"
+               Grid.Row="7"
+               Grid.ColumnSpan="2"
+               IsVisible="false"
+               Margin="30"
+               ClearButtonVisibility="WhileEditing"
+               Keyboard="Numeric"
+               >
+        </Entry>
+
+        <Entry
+               x:Name="Membertwoexpense"
+               Placeholder="Fyll i utgift"
+               Background="white"
+               WidthRequest="200"
+               Grid.Row="7"
+               Grid.ColumnSpan="2"
+               IsVisible="false"
+               Margin="30"
+               ClearButtonVisibility="WhileEditing"
+               Keyboard="Numeric"
+               >
+        </Entry>
+
+        <Entry
+               x:Name="Memberthreexpense"
+               Placeholder="Fyll i utgift"
+               Background="white"
+               WidthRequest="200"
+               Grid.Row="7"
+               Grid.ColumnSpan="2"
+               IsVisible="false"
+               Margin="30"
+               ClearButtonVisibility="WhileEditing"
+               Keyboard="Numeric"
+               >
+        </Entry>
+
+        <Entry
+               x:Name="Memberfourexpense"
+               Placeholder="Fyll i utgift"
+               Background="white"
+               WidthRequest="200"
+               Grid.Row="7"
+               Grid.ColumnSpan="2"
+               IsVisible="false"
+               Margin="30"
+               ClearButtonVisibility="WhileEditing"
+               Keyboard="Numeric"
+               >
+        </Entry>
+
+        <Button
+                x:Name="AddBtn"
+                Text="Lägg till"
+                FontSize="18"
+                TextColor="#008414"
+                WidthRequest="100"
+                HeightRequest="50"
+                Background="black"
+                Grid.Row="7"
+                Grid.Column="2"
+                BorderColor="#008414"
+                BorderWidth="1"
+                IsVisible="false"
+                Clicked="AddExpenses"
+                >
+        </Button>
+
+        <Button Text="Avsluta aktivitet"
+                TextColor="#008414"
+                BackgroundColor="#000000"
+                BorderColor="#008414"
+                BorderWidth="1"
+                WidthRequest="200"
+                HeightRequest="50"
+                Grid.Row="8"
+                Grid.ColumnSpan="3"
+                Margin="30"
+                Clicked="End_Activity"
+                >
+        </Button>
+
+        <Label
+               x:Name="Errormsg"
+               FontSize="18"
+               HorizontalOptions="Center"
+               Grid.Row="9"
+               TextColor="red"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Grid.ColumnSpan="3"
+               >
+        </Label>
+
+    </Grid>
+    </ScrollView>
+</ContentPage>

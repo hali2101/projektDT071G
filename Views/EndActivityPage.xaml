@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:projectpractice="clr-namespace:projectpractice"
+             x:DataType="projectpractice:MainPage"
+             x:Class="projectpractice.EndActivityPage"
+             Title="EndActivityPage"
+             BackgroundColor = "#2F2F2F">
+    <ScrollView>
+    <Grid ColumnSpacing="-30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="VORNU"
+              TextColor="#008414"
+              BackgroundColor="#000000"
+              FontSize="28"
+              FontFamily="Monaco"
+              VerticalOptions="Center"
+              Padding="20"
+              Grid.Row="0"
+              CharacterSpacing="2"
+              Grid.ColumnSpan="3"
+              >
+        </Label>
+                    
+        <Label
+               FontSize="26"
+               x:Name="ActivityNameLabel"
+               HorizontalOptions="Center"
+               Grid.Row="1"
+               TextColor="#008414"
+               WidthRequest="200"
+               HeightRequest="50"
+               TextTransform="Uppercase"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Grid.ColumnSpan="3"
+               >
+        </Label>
+
+        <Label           
+               FontSize="36"
+               x:Name="SumLabel"
+               HorizontalOptions="Center"
+               Grid.Row="2"
+               TextColor="#008414"
+               WidthRequest="200"
+               HeightRequest="50"
+               TextTransform="Uppercase"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Grid.ColumnSpan="3"
+               >
+       </Label>
+
+        <Label FontSize="18"
+               x:Name="MemberOneLabel"
+               HorizontalOptions="Center"
+               Grid.Row="3"
+               Grid.ColumnSpan="3"
+               TextColor="#008414"
+               WidthRequest="300"
+               HeightRequest="50"
+               Background="black"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Margin="10"
+               Grid.Column="0"
+               IsVisible="false">
+        </Label>
+
+
+        <Label
+               FontSize="18"
+               x:Name="MemberTwoLabel"
+               HorizontalOptions="Center"
+               Grid.Row="4"
+               Grid.ColumnSpan="3"
+               TextColor="#008414"
+               WidthRequest="300"
+               HeightRequest="50"
+               Background="black"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Margin="10"
+               Grid.Column="0"
+               IsVisible="false">
+        </Label>
+
+        <Label
+               FontSize="18"
+               x:Name="MemberThreeLabel"
+               HorizontalOptions="Center"
+               Grid.Row="5"
+               Grid.ColumnSpan="3"
+               TextColor="#008414"
+               WidthRequest="300"
+               HeightRequest="50"
+               Background="black"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Margin="10"
+               Grid.Column="0"
+               IsVisible="false">
+        </Label>
+
+        <Label
+               FontSize="18"
+               x:Name="MemberFourLabel"
+               HorizontalOptions="Center"
+               Grid.Row="6"
+               Grid.ColumnSpan="3"
+               TextColor="#008414"
+               WidthRequest="300"
+               HeightRequest="50"
+               Background="black"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Margin="10"
+               Grid.Column="0"
+               IsVisible="false">
+        </Label>
+
+    </Grid>
+    </ScrollView>
+</ContentPage>

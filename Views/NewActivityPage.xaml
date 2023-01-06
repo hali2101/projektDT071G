@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:projectpractice="clr-namespace:projectpractice"
+             x:DataType="projectpractice:AppShell"
+             x:Class="projectpractice.NewActivityPage"
+             Title="Create new activity"
+             BackgroundColor = "#2F2F2F"
+             >
+    <ScrollView>
+    <Grid RowSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Text="VORNU"
+               TextColor="#008414"
+               BackgroundColor="#000000"
+               FontSize="28"
+               FontFamily="Monaco"
+               VerticalOptions="Center"
+               Padding="20"
+               Grid.Row="0"
+               CharacterSpacing="2">
+        </Label>
+
+        <Label Text="Namnge aktivitet:"
+               FontSize="16"
+               TextColor="#008414"
+               Grid.Row="2"           
+               WidthRequest="200"
+               Padding="3">
+        </Label>
+
+        <Entry BackgroundColor="white"
+               WidthRequest="200"
+               Grid.Row="3"
+               x:Name="EntryActivity">
+        </Entry>
+
+        <Label Text="Antal deltagare:"
+               FontSize="16"
+               TextColor="#008414"
+               Grid.Row="4"
+               WidthRequest="200"
+               Padding="3">
+        </Label>
+
+        <Label Text="{Binding Source={x:Reference picker}, Path=SelectedItem}" />
+        <Picker
+                x:Name="picker"
+                Grid.Row="5"
+                Title="Välj antal"
+                BackgroundColor="white"
+                WidthRequest="200"
+                HorizontalTextAlignment="Center"
+                SelectedIndexChanged="OnPickerSelectedIndexChanged">
+              <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>1</x:String>
+                        <x:String>2</x:String>
+                        <x:String>3</x:String>
+                        <x:String>4</x:String>
+                    </x:Array>
+              </Picker.ItemsSource>
+        </Picker>
+
+         <Label
+               x:Name="labelOne"
+               Text="Deltagare 1:"
+               FontSize="16"
+               TextColor="#008414"
+               Grid.Row="7"
+               WidthRequest="200"
+               Padding="3"
+               IsVisible="false">
+        </Label>
+
+        <Entry
+               x:Name="memberOne"
+               BackgroundColor="white"
+               WidthRequest="200"
+               Grid.Row="8"
+               IsVisible="false">
+        </Entry>
+
+        <Label
+               x:Name="labelTwo"
+               Text="Deltagare 2:"
+               FontSize="16"
+               TextColor="#008414"
+               Grid.Row="9"
+               WidthRequest="200"
+               Padding="3"
+               IsVisible="false">
+        </Label>
+
+        <Entry
+               x:Name="memberTwo"
+               BackgroundColor="white"
+               WidthRequest="200"
+               Grid.Row="10"
+               IsVisible="false">
+        </Entry>
+
+        <Label
+               x:Name="labelThree"
+               Text="Deltagare 3:"
+               FontSize="16"
+               TextColor="#008414"
+               Grid.Row="11"
+               WidthRequest="200"
+               Padding="3"
+               IsVisible="false">
+        </Label>
+
+        <Entry
+               x:Name="memberThree"
+               BackgroundColor="white"
+               WidthRequest="200"
+               Grid.Row="12"
+               IsVisible="false">
+        </Entry>
+
+        <Label
+               x:Name="labelFour"
+               Text="Deltagare 4:"
+               FontSize="16"
+               TextColor="#008414"
+               Grid.Row="13"
+               WidthRequest="200"
+               Padding="3"
+               IsVisible="false">
+        </Label>
+
+        <Entry
+               x:Name="memberFour"
+               BackgroundColor="white"
+               WidthRequest="200"
+               Grid.Row="14"
+               IsVisible="false">
+        </Entry>
+
+        <Button Text="Starta aktivitet"
+                TextColor="#008414"
+                BackgroundColor="#000000"
+                BorderColor="#008414"
+                BorderWidth="1"
+                WidthRequest="200"
+                HeightRequest="30"
+                Grid.Row="20"
+                Clicked="Button_Clicked_3"
+                >
+        </Button>
+
+    </Grid>
+    </ScrollView>
+</ContentPage>
